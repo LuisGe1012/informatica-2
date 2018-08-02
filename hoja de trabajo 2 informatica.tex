@@ -1,0 +1,105 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\renewcommand{\baselinestretch}{1.5}
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+\linespread{1.1} 
+\begin{document}
+\title{Hoja de trabajo No.2}\large
+\author{Luis Gerardo Cruz}
+\maketitle
+\section*{Ejercicio 1}
+\begin{large}
+\textbf{Demostrar utilizando induccion}
+\end{large} 
+\ \[
+        \forall\ n.\ n^3\geq n^2
+\]
+\\donde $n\in\mathbb{N}$
+
+\
+\\\textbf{Solucion:}
+
+\ \begin{flushleft}
+• Caso base: n = 0
+\end{flushleft}
+
+\[
+0^{3}\geq0^{2}= 0\geq0
+\]
+\ \begin{flushleft}
+• Caso inductivo: $n\in\mathbb{N}$
+\end{flushleft}
+
+\ Hipotesis inductiva: \[
+        \ n^3\geq n^2 \ = n*(n^2)\geq (n^2)
+\]
+
+\ Sucesor: S(n) = (n+1) 
+
+\
+\\\textbf{Demostracion:}
+
+\
+\\ $ (n+1)(n+1)^2\geq (n+1)^2 $ 
+\
+\\ $ (n+1)\geq (n+1)^2/(n+1)^2 $
+\
+\\ $ (n+1)\geq 1$
+\
+\\ $ n+1\geq 1 $
+\
+\\ $ n\geq 1-1 $
+\
+\\ $ n\geq 0 $ 
+
+\
+\\ A pesar de que la demostracion no llega a la hipotesis inductiva, en esta misma se puede observar que se cumple el parametro requerido en el cual n cumple la funcion de ser mayor o igual en todos los casos, ya que sea n cualquier $ \mathbb{N}$, siempre sera mayor o igual. 
+\section*{Ejercicio2}
+\textbf{Demostrar utilizando induccion la desigualdad de Bernoulli:}
+\[
+        \forall\ n.\ (1+x)^n\geq nx
+\]
+\\donde $n\in \mathbb{N}$, $x\in \mathbb{Q}$ y $x\geq -1$
+\\
+\\
+\textbf{Solucion:} 
+\begin{itemize}
+\item Caso base: n = 0
+\\
+\\
+\ cuando n es igual a 0, entonces:
+\[
+\ (1+x)^0\geq 0x\] 
+\[\ 1\geq 0\]
+
+\item Caso Inductivo: $n\in \mathbb{N}$, $x\in \mathbb{Q}$ y $x\geq -1$
+\\
+\\
+\ hipotesis inductiva: $n.\ (1+x)^n\geq nx+1$
+\\
+\item Demostracion:
+\\
+\ $(1+x)^n\geq nx+1$ 
+\\
+\ $(1+x)^n (1+x)^1\geq (nx+1)(1+x)$
+\\
+\ $(1+x)^{n+1}\geq nx+nx^2+1+x$ 
+\\
+\\
+\ Si: $nx^2\geq 0$ Entonces: $(1+x)^{n+1}\geq nx+x+1$
+\\
+\ $(1+x)^{n+1}\geq x(n+1)+1$
+\\
+\\
+\ Con esto se demuestra que para cualquier n o x la desigualdad siemopre va terminar siendo mayor o igual que tal como estipula 
+\end{itemize}
+\end{document}
